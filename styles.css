@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+body{
+    background-color: #15162f;
+    color: white;
+    font-family: "Josefin sans", sans-serif;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+nav > h1{
+    font-size: 25px;
+    background-color: rgb(236, 49, 49);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links{
+    width: 400px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+
+li:hover{
+    border:1px solid white;
+    border-radius: 10px;
+}
+
+main{
+    display: flex;
+    height: 80%;
+    margin-top: 20px;
+}
+
+.left{
+    width: 50%;
+    font-size: 40px;
+}
+
+.left > h2{
+    line-height: 1rem;
+}
+
+span{
+    color:rgb(26, 245, 37);
+    font-size: 60px;
+}
+
+.span2{
+    color:rgb(243, 25, 9);
+    font-size:50px;
+}
+
+p{
+    font-size: 18px;
+    color: blanchedalmond;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.right{
+    width:50%;
+}
+
+.right img{
+    width: 90%;
+    margin-left: 40px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.icons{
+    margin-top: 80px;
+    display: flex;
+    gap:25px;
+    margin-left: 20px;
+}
+
+.icons > img{
+    width: 25px;
+    border-radius: 40%;
+    padding: 9px;
+    background-color: rgb(225, 226, 235);
+    cursor: pointer;
+}
+
+.icons > img:hover{
+    transform: translateY(-4px);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 140px;
+    border-radius: 40px;
+    width: 70%;
+    padding: 4px 30px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.course{
+    width: 120px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+}
+
+.course > h2{
+    color: blue;
+}
+
+.course > h4 {
+    margin-top: -10px;
+    color:black;
+    font-size: 13px;
+}
+
+.galleries{
+    background-color: rgb(10, 1, 1);
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.galleries .inside > h2{
+    font-size: 38px ;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+    background-color: black;
+}
+
+.gallery .block > img{
+    width:300px;
+    object-fit: contain;
+    border-radius: 20px;
+
+}
+
+.gallery .block > h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: aliceblue;
+}
+
+footer{
+    display: flex;
+    padding: 20px;
+}
+
+.footer__left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+footer > img{
+    width: 50%;
+    height: 300px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+@media (max-width: 800px){
+    nav > h2{
+        font-size:20px;
+    }
+
+    .left{
+        font-size: 18px;
+    }
+
+    span{
+        font-size: 34px;
+    }
+
+    .span2{
+        font-size: 34px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .inside > h2{
+        font-size: 40px;
+    }
+}
